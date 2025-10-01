@@ -8,6 +8,9 @@ export default function RootLayout(){
             <Stack.Screen options={{
                 headerTitle: () => <Text className="text-2xl font-bold text-red-500">Home</Text> 
             }} name="index" />
+            <Stack.Screen options={{
+                headerTitle: () => <Text className="text-2xl font-bold text-red-500">About</Text> 
+            }} name="about" />
         </Stack>
     )
 }

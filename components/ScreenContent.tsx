@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 import { EditScreenInfo } from './EditScreenInfo';
+import { Link } from 'expo-router';
 
 type ScreenContentProps = {
   title: string;
@@ -16,6 +17,7 @@ export const ScreenContent = ({ title, path, children }: ScreenContentProps) => 
       <View className={styles.separator} />
       <EditScreenInfo path={path} />
       {children}
+      <Link href="/about">About</Link>
     </View>
   );
 };
